@@ -1,3 +1,16 @@
+/*
+
+Esse código cria uma equação de parábola aleatória com geração randômica dos coeficientes A, B e C.
+Relembrando que a equação da parábola é f(x) = A * x^2 + B * x + C
+Esse algoritmo encontra um mínimo local (se A > 0) ou máximo local (se A < 0) entre os limites
+da busca que é o intervalo [0, 10^18]. 
+
+A ideia da busca ternária é encontrar o máximo/mínimo global quando há uma função unimodal, ou seja,
+quando há um ponto x em que a função cresce para x < m e decresce para x > m ou vice-versa e o objetivo
+é encontrar esse máximo/mínimo global x.
+
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;

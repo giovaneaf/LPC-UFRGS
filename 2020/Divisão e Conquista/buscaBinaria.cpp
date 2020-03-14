@@ -1,3 +1,12 @@
+/*
+
+Esse código faz uma busca binária em um valor que deve ser adivinhado.
+O usuário insere o maior valor possível para o número escolhido e o número escolhido é gerado
+aleatoriamente entre [0, maior valor possível] após isso mostrará qual o valor escolhido e então mostrará
+os passos da busca binária até encontrar esse valor.
+
+*/
+
 #include <bits/stdc++.h>
 
 using namespace std;
