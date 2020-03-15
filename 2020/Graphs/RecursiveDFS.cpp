@@ -15,15 +15,15 @@ typedef long long ll;
 
 int n, m;
 
-void DFS(int nodoAtual, vector<int>* adjacencyList, vector<bool>& visitado)
+void DFS(int node, vector<int>* adjacencyList, vector<bool>& seen)
 {
-	visitado[nodoAtual] = true;
-	printf("Visitando o nodo %d\n", nodoAtual);
-	for(int vizinho : adjacencyList[nodoAtual])
+	seen[node] = true;
+	printf("Visitando o nodo %d...\n", node);
+	for(int neighbor : adjacencyList[node])
 	{
-		if(!visitado[vizinho])
+		if(!seen[neighbor])
 		{
-			DFS(vizinho, adjacencyList, visitado);
+			DFS(neighbor, adjacencyList, seen);
 		}
 	}
 }
@@ -32,18 +32,18 @@ int main()
 {
 	n = 7;	// número de nodos
 	m = 6;	// número de arestas
-	pair<int, int> arestas[m] = {mp(4, 5), mp(0, 2), mp(1, 2), mp(0, 3), mp(0, 4), mp(1, 5)};
+	pair<int, int> edges[m] = {mp(4, 5), mp(0, 2), mp(1, 2), mp(0, 3), mp(0, 4), mp(1, 5)};
 	vector<int> adjacencyList[n];
 	int u, v;	// aresta possui vértices u e v
 	// construção do grafo por lista de adjacência
 	for(int i = 0; i < m; ++i)
 	{
-		u = arestas[i].first; v = arestas[i].second;
+		u = edges[i].first; v = edges[i].second;
 		adjacencyList[u].push_back(v);
 		adjacencyList[v].push_back(u); // se for bidirecional precisa adicionar a aresta reversa
 	}
-	int raiz = 0;
-	vector<bool> visitado(n, false);
-	DFS(raiz, adjacencyList, visitado); // faz DFS a partir do nodo raiz
+	int root = 0;
+	vector<bool> seen(n, false);
+	DFS(root, adjacencyList, seen); // faz DFS a partir do nodo raiz
 	return 0;
 }
