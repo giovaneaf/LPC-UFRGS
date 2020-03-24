@@ -92,7 +92,7 @@ const int N = 4;    // tamanho da matriz
 
 ll f(ll n)  // calcula f(n)
 {
-    vector<vector<ll>> initial(4, vector<ll>(1, 0));
+    vector<vector<ll>> initial(N, vector<ll>(1, 0));
     // preenche matriz com valores iniciais
     /*
         [ f(0) ]
@@ -108,7 +108,7 @@ ll f(ll n)  // calcula f(n)
     // preenche a matriz com coeficientes obtidos da recorrência
     mat = {{0, 1, 0, 0}, {0, 0, 1, 0}, {1, 0, 1, -1}, {0, 0, 0, 1}};
     mat_mod_fastexp(mat, n-2, result);              // realiza a exponenciação rápida
-    vector<vector<ll>> ans(4, vector<ll>(1));
+    vector<vector<ll>> ans(N, vector<ll>(1));
     // multiplica a matriz resultado da exponenciação (result) com
     // o vetor inicial chamado initial e guarda o valor em ans
     multiply_matrix_mod(result, initial, ans);
