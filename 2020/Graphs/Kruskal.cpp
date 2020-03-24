@@ -2,6 +2,9 @@
 
 Esse código calcula a árvore geradora mínima com o algoritmo de Kruskal (muito parecido com Dijkstra)
 
+Complexidade de tempo:  O ( V + E * log(V) )
+onde V é o número de vértices e E é o número de arestas
+
 */
 
 #include <bits/stdc++.h>

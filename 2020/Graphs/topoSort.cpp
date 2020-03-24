@@ -9,6 +9,9 @@ que está representado na função chamada de toposort.
 Outra forma é calcular a ordem da ordem topológica primeiro e depois processar os nodos nessa ordem que
 está representado na função chamada de computeOrder e a ordem é guardada na pilha chamada de order.
 
+Complexidade de tempo:  O ( V + E )
+onde V é o número de vértices e E é o número de arestas
+
 */
 
 #include <bits/stdc++.h>

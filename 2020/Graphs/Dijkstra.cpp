@@ -2,6 +2,9 @@
 
 Esse código faz um Dijkstra a partir da raiz calculando a menor distância entre a raiz e qualquer outro nodo
 
+Complexidade de tempo:  O ( V + E * log(V) )
+onde V é o número de vértices e E é o número de arestas
+
 */
 
 #include <bits/stdc++.h>

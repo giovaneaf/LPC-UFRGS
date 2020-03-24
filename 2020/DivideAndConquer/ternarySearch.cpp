@@ -12,6 +12,9 @@ quando há um ponto x em que a função cresce para x < m e decresce para x > m 
 
 Note que a parábola é uma função unimodal e então sempre encontrará esse máximo/mínimo local
 
+Complexidade de tempo:  O ( log(N) )
+onde N é o tamanho do intervalo [-10^18, 10^18] que é 2*10^18
+
 */
 
 #include <bits/stdc++.h>

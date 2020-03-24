@@ -3,6 +3,9 @@
 Esse código faz um DFS iterativo a partir da raiz.
 Note que ao contrário do BFS não é possível calcular a menor distância.
 
+Complexidade de tempo:  O ( V + E )
+onde V é o número de vértices e E é o número de arestas
+
 */
 
 #include <bits/stdc++.h>

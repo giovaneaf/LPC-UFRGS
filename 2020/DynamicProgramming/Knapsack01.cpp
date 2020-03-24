@@ -7,6 +7,10 @@ Note que na versão bottom-up é necessário preencher toda a tabela de memoiza�
 enquanto que a top-down só calcula os estados necessários para calcular o máximo
 de uma capacidade fixa (que está setado em 10)
 
+Complexidade de tempo:  O ( N*W )
+onde N é o número de elementos e W é a maxCapacity, ou seja, 
+a capacidade máxima que pode ser carregada.
+
 */
 
 #include <bits/stdc++.h>

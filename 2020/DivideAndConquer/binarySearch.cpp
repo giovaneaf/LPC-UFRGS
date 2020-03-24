@@ -5,6 +5,9 @@ O usuário insere o maior valor possível para o número escolhido e o número e
 aleatoriamente entre [0, maior valor possível] após isso mostrará qual o valor escolhido e então mostrará
 os passos da busca binária até encontrar esse valor.
 
+Complexidade de tempo:  O ( log(N) )
+onde N é o maior valor possível
+
 */
 
 #include <bits/stdc++.h>

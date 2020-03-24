@@ -4,6 +4,9 @@ Esse código gera um vetor de tamanho n (MACRO) com números aleatórios.
 Após isso ele executa o Merge Sort ordenando o vetor e aproveita para calcular 
 o número de inversões na hora de fazer o "merge" das duas metades ordenadas.
 
+Complexidade de tempo:  O ( N*log(N) )
+Onde N é o tamanho do vetor
+
 */
 
 #include <bits/stdc++.h>
