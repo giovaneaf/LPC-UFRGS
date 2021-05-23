@@ -1,6 +1,6 @@
 /*
 
-Esse código calcula a árvore geradora mínima com o algoritmo de Kruskal (muito parecido com Dijkstra)
+Esse código calcula a árvore geradora mínima com o algoritmo de Prim (muito parecido com Dijkstra)
 
 Complexidade de tempo:  O ( V + E * log(V) )
 onde V é o número de vértices e E é o número de arestas
@@ -20,7 +20,7 @@ typedef pair<int, int> ii;
 
 int n, m;
 
-void Kruskal(int root, vector<pair<int, int>>* adjacencyList)
+void Prim(int root, vector<pair<int, int>>* adjacencyList)
 {
     vector<int> dist(n, INF);       // vetor que armazena a distância até o nodo, inicialmente infinito
     vector<bool> seen(n, false);    // vetor de visitado
@@ -81,6 +81,6 @@ int main()
         adjacencyList[v].push_back(mp(u, cost[i])); // se for bidirecional precisa adicionar a aresta reversa
     }
     int root = 0;
-    Kruskal(root, adjacencyList);                   // realiza Kruskal a partir de root (não importa a raiz)
+    Prim(root, adjacencyList);                   // realiza o algoritmo de Prim a partir de root (não importa a raiz)
     return 0;
 }
